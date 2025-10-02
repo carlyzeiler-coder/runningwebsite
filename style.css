@@ -1,0 +1,108 @@
+style.css
+
+/*home page css*/
+body {
+  font-family: Arial, sans-serif; /*picks a font*/
+  margin: 1px;/*picks a margin size*/
+  padding: 1px;/*picks a padding size*/
+  background-color: #f8f8f8;/*picks a background color*/
+  color:gray;/*picks a text color*/
+}
+
+nav {
+  display: flex; /*puts items in a row*/
+  align-items: center;/*centers items vertically*/
+  background-color: white; /*picks a background color*/
+  padding: 10px 20px; /*picks a padding size*/
+  border-bottom: 1px solid #ddd; /*picks a border size*/
+}
+
+nav img {
+  height: 40px; /*logo size*/
+  margin-right: 10px; /*spacing after logo*/
+}
+
+nav a {
+  margin: 0 15px; /*space btwn links*/
+  text-decoration: none; /*removes an underline*/
+  color: black; /*link color*/
+  font-weight: 500; /*medium bold*/
+}
+
+nav a.active {
+  background-color: #f1f1f1; /*background color*/
+  padding: 5px 10px; /*padding size*/
+  border-radius: 5px; /*makes corners rounded*/
+}
+
+.content {
+  display: flex; /*flexible layout*/
+  flex-direction: column; /*content lays vertically*/
+  gap: 50px; /* space between section size*/
+  padding: 30px; /*padding size*/
+}
+
+.section {
+  display: flex; /*flexible layout*/
+  align-items: center; /*center items*/
+  justify-content: space-between; /*space between items*/
+  gap: 30px; /*space between elements*/
+}
+
+.section img {
+  width: 45%; /*image width*/
+  border-radius: 10px; /*rounded corners*/
+}
+
+.section .text {
+  width: 55%; /*width for text*/
+}
+
+.section h2 {
+  margin-top: 0; /*removes a top margin*/
+}
+
+#main-title{
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 768px) { 
+  .section {
+    flex-direction: column; /*stack vertically for smaller screens*/
+  }
+
+  .section img,
+  .section .text {
+    width: 100%; /*full width*/
+  }
+}
+
+/*running tips page css*/
+
+.tips-section {
+  margin: 40px auto; /*center section with top/bottom margin*/
+  max-width: 1000px;/*limit width*/
+  text-align: center;/*center-align text*/
+}
+
+.tips-section h3 {
+  margin-bottom: 20px; /*spacing under heading*/
+  color: #666; /*darker gray color*/
+  letter-spacing: 1px;  /*extra space in between letters*/
+}
+
+.tips-grid {
+  display: grid; /*layout*/
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /*fexible comlumns*/
+  gap: 20px; /*space btwn grid items*/
+}
+
+.tip-card {
+  background: white; /*background color*/
+  padding: 15px; /*inner space*/
+  border: 1px solid #ddd; /*small border*/
+  border-radius: 8px;/*rounded corners*/
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05); /*small shadow*/
+}
