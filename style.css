@@ -106,3 +106,51 @@ nav a.active {
   border-radius: 8px;/*rounded corners*/
   box-shadow: 0px 1px 2px rgba(0,0,0,0.05); /*small shadow*/
 }
+
+/*gear recommendation page css*/
+
+.gear-section {
+  margin: 50px auto;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.gear-section h3 {
+  margin-bottom: 20px;
+  color: #666;
+  letter-spacing: 1px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 10px;
+  font-size: 12px;
+}
+
+.gear-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.gear-card {
+  background: white;
+  width: 280px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.gear-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.gear-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
